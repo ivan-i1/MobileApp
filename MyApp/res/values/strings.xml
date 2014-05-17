@@ -9,14 +9,23 @@
     <string name="exit_button">EXIT</string>
     <string name="highscore">HIGHSCORE: __</string>
     <string name="score">SCORE: __</string>
-    <string-array name="button_values">
-        <item >1/4</item>
-        <item >.1333</item>
-        <item >25%</item>
-        <item >4/3</item>
-    </string-array>
+    
     <string name="secret">****</string>
     <string name="image_button">Image Match Up</string>
     <string name="numbers_button">Fraction Match Up</string>
+    <string-array name="Array">
+        <item >1/4</item>
+        <item >25%</item>
+        <item >0.1333</item>
+        <item >4/3</item>
+        <item >4/8</item>
+        <item >50/100</item>
+    </string-array>
+    <string name="Value1">1/4</string>
+    <string name="Value2">50/100</string>
+    <string name="Value3">4/8</string>
+    <string name="Value4">25%</string>
+    <string name="Value5">4/3</string>
+    <string name="Value6">0.1333</string>
 
 </resources>

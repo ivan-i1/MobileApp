@@ -87,4 +87,40 @@
         android:layout_alignTop="@+id/button3"
         android:text="@string/secret" />
 
+    <TextView
+        android:id="@+id/music_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/music"
+        android:layout_alignLeft="@+id/music"
+        android:text="MUSIC"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/sound_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sound"
+        android:layout_alignLeft="@+id/sound"
+        android:text="SOUND"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/button5"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button3"
+        android:text="@string/secret" />
+
+    <Button
+        android:id="@+id/button6"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button5"
+        android:text="@string/secret" />
+
 </RelativeLayout>

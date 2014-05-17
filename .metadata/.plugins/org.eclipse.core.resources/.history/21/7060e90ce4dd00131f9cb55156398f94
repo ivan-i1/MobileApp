@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="music">ON</string>
+    <string name="sound">ON</string>
+    <string name="exit_button">EXIT</string>
+    <string name="highscore">HIGHSCORE: __</string>
+    <string name="score">SCORE: __</string>
+    
+    <string name="secret">****</string>
+    <string name="image_button">Image Match Up</string>
+    <string name="numbers_button">Fraction Match Up</string>
+    <string-array name="Array">
+        <item >1/4</item>
+        <item >25%</item>
+        <item >0.1333</item>
+        <item >4/3</item>
+        <item >4/8</item>
+        <item >50/100</item>
+    </string-array>
+
+</resources>

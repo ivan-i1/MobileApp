@@ -1,0 +1,115 @@
+package com.example.myapp;
+
+import android.app.Activity;
+import android.content.Context;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+
+	MediaPlayer mp;
+	int totalButtons;
+	boolean second;
+	int prev;
+	int duration = Toast.LENGTH_SHORT;
+	CharSequence text;
+	Context context;
+	Toast toast;
+	
+	Button button1;
+	Button button2;
+	Button button3;
+	Button button4;
+	Button button5;
+	Button button6;
+	
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		mp = MediaPlayer.create(this, R.raw);
+		setContentView(R.layout.activity_main);
+		mp.start();
+		
+		int[] selections = new int[6];
+		for(int i = 0; i < 6; i++){
+			
+		}
+		int selector = (int)(6*Math.random())+1;
+		
+		second = false;
+		
+		Button sound = (Button) findViewById(R.id.sound);
+		Button music = (Button) findViewById(R.id.music);
+		
+		button1 = (Button) findViewById(R.id.button1);
+		button2 = (Button) findViewById(R.id.button2);
+		button3 = (Button) findViewById(R.id.button3);
+		button4 = (Button) findViewById(R.id.button4);
+		button5 = (Button) findViewById(R.id.button5);
+		button6 = (Button) findViewById(R.id.button6);
+		
+		button1.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				button1.setText(R.string.Value1);
+				if(second){
+					if(prev==4){
+						text = "Match!";
+						context = getApplicationContext(); 
+						toast = Toast.makeText(context, text, duration) ;
+						toast.show();
+						second = false;
+					}else{
+						second = false;
+						
+					}
+				}else{
+					button1.setText(R.string.Value1);
+					second = true;
+					prev = 1;
+				}
+			}
+		});
+		
+		button2.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				button2.setText(R.string.Value2);
+				if(second){
+					if(prev==4){
+						text = "Match!";
+						context = getApplicationContext(); 
+						toast = Toast.makeText(context, text, duration) ;
+						toast.show();
+					}
+				}
+			}
+		});
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	
+	protected void onDestroy(Bundle savedInstance){
+		mp.stop();
+	}
+	
+	protected void onFinish(Bundle savedInstance){
+		mp.stop();
+	}
+
+}
