@@ -1,5 +1,7 @@
 package com.example.smsmessaging;
 
+import java.io.File;
+
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -39,7 +41,9 @@ public class SMS extends Activity {
                         "Please enter both phone number and message.", 
                         Toast.LENGTH_SHORT).show();
             }
-        });  
+        });
+        File f = getFilesDir();
+        String path = f.getAbsolutePath();
     }
     
 	private void sendSMS(String phoneNumber, String message)
