@@ -51,14 +51,14 @@ public class ImageMatch extends Activity {
 		music = (ToggleButton) findViewById(R.id.imMusic);
 		exit = (Button) findViewById(R.id.imExit);
 		
-		button1 = (ImageButton) findViewById(R.id.imageButton1);
+		/*button1 = (ImageButton) findViewById(R.id.imageButton1);
 		button2 = (ImageButton) findViewById(R.id.imageButton2);
 		button3 = (ImageButton) findViewById(R.id.imageButton3);
 		button4 = (ImageButton) findViewById(R.id.imageButton4);
 		button5 = (ImageButton) findViewById(R.id.imageButton5);
-		button6 = (ImageButton) findViewById(R.id.imageButton6);
+		button6 = (ImageButton) findViewById(R.id.imageButton6);*/
 		
-		button1.setOnClickListener(new View.OnClickListener() {
+		/*button1.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
@@ -212,7 +212,7 @@ public class ImageMatch extends Activity {
 					prev = 6;
 				}
 			}
-		});
+		});*/
 
 		sound.setOnClickListener(new View.OnClickListener() {
 			
