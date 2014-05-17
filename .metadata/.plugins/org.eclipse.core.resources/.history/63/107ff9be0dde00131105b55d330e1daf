@@ -40,16 +40,16 @@ public class ImageMatch extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_image);
-		ms = MediaPlayer.create(this, R.raw.step);
+		/*ms = MediaPlayer.create(this, R.raw.step);
 		mp = MediaPlayer.create(this, R.raw.sakura);
 		
-		mp.start();
+		mp.start();*/
 		
 		second = false;
 		
-		sound = (ToggleButton) findViewById(R.id.imSound);
+		/*sound = (ToggleButton) findViewById(R.id.imSound);
 		music = (ToggleButton) findViewById(R.id.imMusic);
-		exit = (Button) findViewById(R.id.imExit);
+		exit = (Button) findViewById(R.id.imExit);*/
 		
 		/*button1 = (ImageButton) findViewById(R.id.imageButton1);
 		button2 = (ImageButton) findViewById(R.id.imageButton2);
@@ -214,7 +214,7 @@ public class ImageMatch extends Activity {
 			}
 		});*/
 
-		sound.setOnClickListener(new View.OnClickListener() {
+		/*sound.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
@@ -234,7 +234,7 @@ public class ImageMatch extends Activity {
 				}else{
 					bSound = false;
 					ms.reset();
-				}*/
+				}
 			}
 		});
 		
@@ -249,7 +249,7 @@ public class ImageMatch extends Activity {
 				}else{
 					bMusic = true;
 					mp.pause();
-				}*/
+				}
 			}
 		});
 		exit.setOnClickListener(new View.OnClickListener() {
@@ -261,6 +261,6 @@ public class ImageMatch extends Activity {
 				//mp.stop();
 				finish();
 			}
-		});
+		});*/
 	}
 }

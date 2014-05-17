@@ -214,7 +214,7 @@ public class ImageMatch extends Activity {
 			}
 		});*/
 
-		sound.setOnClickListener(new View.OnClickListener() {
+		/*sound.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
@@ -234,7 +234,7 @@ public class ImageMatch extends Activity {
 				}else{
 					bSound = false;
 					ms.reset();
-				}*/
+				}
 			}
 		});
 		
@@ -249,7 +249,7 @@ public class ImageMatch extends Activity {
 				}else{
 					bMusic = true;
 					mp.pause();
-				}*/
+				}
 			}
 		});
 		exit.setOnClickListener(new View.OnClickListener() {
@@ -261,6 +261,6 @@ public class ImageMatch extends Activity {
 				//mp.stop();
 				finish();
 			}
-		});
+		});*/
 	}
 }

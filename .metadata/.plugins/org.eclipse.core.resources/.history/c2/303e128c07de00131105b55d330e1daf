@@ -39,24 +39,24 @@ public class ImageMatch extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_image);
-		ms = MediaPlayer.create(this, R.raw.step);
-		mp = MediaPlayer.create(this, R.raw.sakura);
 		
-		mp.start();
+		/*ms = MediaPlayer.create(this, R.raw.step);
+		mp = MediaPlayer.create(this, R.raw.sakura);
+		setContentView(R.layout.activity_main);
+		mp.start();*/
 		
 		second = false;
 		
-		sound = (ToggleButton) findViewById(R.id.imSound);
+		/*sound = (ToggleButton) findViewById(R.id.imSound);
 		music = (ToggleButton) findViewById(R.id.imMusic);
-		exit = (Button) findViewById(R.id.imExit);
+		exit = (Button) findViewById(R.id.imExit);*/
 		
-		/*button1 = (ImageButton) findViewById(R.id.imageButton1);
+		button1 = (ImageButton) findViewById(R.id.imageButton1);
 		button2 = (ImageButton) findViewById(R.id.imageButton2);
 		button3 = (ImageButton) findViewById(R.id.imageButton3);
 		button4 = (ImageButton) findViewById(R.id.imageButton4);
 		button5 = (ImageButton) findViewById(R.id.imageButton5);
-		button6 = (ImageButton) findViewById(R.id.imageButton6);*/
+		button6 = (ImageButton) findViewById(R.id.imageButton6);
 		
 		/*button1.setOnClickListener(new View.OnClickListener() {
 			
@@ -249,8 +249,8 @@ public class ImageMatch extends Activity {
 				}else{
 					bMusic = true;
 					mp.pause();
-				}*/
-			}
+				}
+			}*/
 		});
 		exit.setOnClickListener(new View.OnClickListener() {
 			

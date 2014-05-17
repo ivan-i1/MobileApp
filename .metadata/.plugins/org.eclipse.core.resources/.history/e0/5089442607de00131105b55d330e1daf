@@ -23,8 +23,8 @@ public class ImageMatch extends Activity {
 	CharSequence text;
 	Context context;
 	Toast toast;
-	//TextView score= (TextView) findViewById(R.id.score);
-	//TextView highscore= (TextView) findViewById(R.id.highscore);
+	//TextView score= (TextView) findViewById(R.id.score);;
+	//TextView highscore= (TextView) findViewById(R.id.highscore);;
 	
 	ImageButton button1;
 	ImageButton button2;
@@ -39,11 +39,11 @@ public class ImageMatch extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_image);
-		ms = MediaPlayer.create(this, R.raw.step);
-		mp = MediaPlayer.create(this, R.raw.sakura);
 		
-		mp.start();
+		/*ms = MediaPlayer.create(this, R.raw.step);
+		mp = MediaPlayer.create(this, R.raw.sakura);
+		setContentView(R.layout.activity_main);
+		mp.start();*/
 		
 		second = false;
 		
@@ -51,12 +51,12 @@ public class ImageMatch extends Activity {
 		music = (ToggleButton) findViewById(R.id.imMusic);
 		exit = (Button) findViewById(R.id.imExit);
 		
-		/*button1 = (ImageButton) findViewById(R.id.imageButton1);
+		button1 = (ImageButton) findViewById(R.id.imageButton1);
 		button2 = (ImageButton) findViewById(R.id.imageButton2);
 		button3 = (ImageButton) findViewById(R.id.imageButton3);
 		button4 = (ImageButton) findViewById(R.id.imageButton4);
 		button5 = (ImageButton) findViewById(R.id.imageButton5);
-		button6 = (ImageButton) findViewById(R.id.imageButton6);*/
+		button6 = (ImageButton) findViewById(R.id.imageButton6);
 		
 		/*button1.setOnClickListener(new View.OnClickListener() {
 			
@@ -219,7 +219,7 @@ public class ImageMatch extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				/*if(bSound){
+				if(bSound){
 					try {
 						ms.prepare();
 					} catch (IllegalStateException e) {
@@ -234,7 +234,7 @@ public class ImageMatch extends Activity {
 				}else{
 					bSound = false;
 					ms.reset();
-				}*/
+				}
 			}
 		});
 		
@@ -243,13 +243,13 @@ public class ImageMatch extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-			/*	if(bMusic){
+				if(bMusic){
 					mp.start();
 					bMusic = false;
 				}else{
 					bMusic = true;
 					mp.pause();
-				}*/
+				}
 			}
 		});
 		exit.setOnClickListener(new View.OnClickListener() {
@@ -257,8 +257,8 @@ public class ImageMatch extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				//ms.stop();
-				//mp.stop();
+				ms.stop();
+				mp.stop();
 				finish();
 			}
 		});

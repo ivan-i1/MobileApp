@@ -53,28 +53,4 @@
         android:layout_below="@+id/imageButton4"
         android:src="@drawable/ic_launcher" />
 
-    <Button
-        android:id="@+id/imExit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:text="EXIT" />
-
-    <ToggleButton
-        android:id="@+id/imMusic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:text="ToggleButton" />
-
-    <ToggleButton
-        android:id="@+id/imSound"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/imMusic"
-        android:text="ToggleButton" />
-
 </RelativeLayout>
