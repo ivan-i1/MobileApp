@@ -22,8 +22,8 @@ public class MainActivity extends Activity {
 	CharSequence text;
 	Context context;
 	Toast toast;
-	TextView score= (TextView) findViewById(R.id.score);;
-	TextView highscore= (TextView) findViewById(R.id.highscore);;
+	//TextView score= (TextView) findViewById(R.id.score);;
+	//TextView highscore= (TextView) findViewById(R.id.highscore);;
 	
 	Button button1;
 	Button button2;
@@ -42,12 +42,6 @@ public class MainActivity extends Activity {
 		mp = MediaPlayer.create(this, R.raw.sakura);
 		setContentView(R.layout.activity_main);
 		mp.start();
-		
-		int[] selections = new int[6];
-		for(int i = 0; i < 6; i++){
-			
-		}
-		int selector = (int)(6*Math.random())+1;
 		
 		second = false;
 		
@@ -77,13 +71,13 @@ public class MainActivity extends Activity {
 						toast.show();
 						second = false;
 						countScr++;
-						score.setText("SCORE: "+score);
-						if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
+						//score.setText("SCORE: "+score);
+						//if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
 					}else{
 						second = false;
 					}
 				}else{
-					button1.setText(R.string.Value1);
+					//button1.setText(R.string.Value1);
 					second = true;
 					prev = 1;
 				}
@@ -105,8 +99,8 @@ public class MainActivity extends Activity {
 						toast.show();
 						second = false;
 						countScr++;
-						score.setText("SCORE: "+score);
-						if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
+						//score.setText("SCORE: "+score);
+						//if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
 					}else{
 						second = false;
 					}
@@ -132,8 +126,8 @@ public class MainActivity extends Activity {
 						toast.show();
 						second = false;
 						countScr++;
-						score.setText("SCORE: "+score);
-						if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
+						//score.setText("SCORE: "+score);
+						//if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
 					}else{
 						second = false;
 					}
@@ -159,8 +153,8 @@ public class MainActivity extends Activity {
 						toast.show();
 						second = false;
 						countScr++;
-						score.setText("SCORE: "+score);
-						if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
+						//score.setText("SCORE: "+score);
+						//if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
 					}else{
 						second = false;
 					}
@@ -186,8 +180,8 @@ public class MainActivity extends Activity {
 						toast.show();
 						second = false;
 						countScr++;
-						score.setText("SCORE: "+score);
-						if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
+						//score.setText("SCORE: "+score);
+						//if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
 					}else{
 						second = false;
 					}
@@ -213,8 +207,8 @@ public class MainActivity extends Activity {
 						toast.show();
 						second = false;
 						countScr++;
-						score.setText("SCORE: "+score);
-						if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
+						//score.setText("SCORE: "+score);
+						//if(countScr>countHgh)highscore.setText("HIGHSCORE: "+ countHgh);
 					}else{
 						second = false;
 					}

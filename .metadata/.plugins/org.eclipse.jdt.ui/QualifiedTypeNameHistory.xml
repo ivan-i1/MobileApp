@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.media.MediaPlayer"/>
+<fullyQualifiedTypeName name="com.example.myapp.R.string"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.example.myapp.R.layout"/>
+<fullyQualifiedTypeName name="com.example.myapp.R.id"/>
+<fullyQualifiedTypeName name="com.example.myapp.R.raw"/>
+</qualifiedTypeNameHistroy>
