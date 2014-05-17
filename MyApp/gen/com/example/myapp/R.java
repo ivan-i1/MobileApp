@@ -27,7 +27,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0012;
+        public static final int action_settings=0x7f0a0013;
         public static final int button1=0x7f0a0007;
         public static final int button2=0x7f0a0008;
         public static final int button3=0x7f0a0009;
@@ -37,6 +37,7 @@ public final class R {
         public static final int exit_button=0x7f0a0005;
         public static final int exit_menu=0x7f0a000f;
         public static final int highscore=0x7f0a0003;
+        public static final int imageButton=0x7f0a0012;
         public static final int image_menu=0x7f0a0011;
         public static final int music=0x7f0a0004;
         public static final int music_label=0x7f0a000b;

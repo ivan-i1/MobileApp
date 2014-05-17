@@ -48,8 +48,8 @@ public class MainActivity extends Activity {
 		
 		second = false;
 		
-		sound = (Button) findViewById(R.id.sound);
-		music = (Button) findViewById(R.id.music);
+		Button sound = (Button) findViewById(R.id.sound);
+		Button music = (Button) findViewById(R.id.music);
 		
 		button1 = (Button) findViewById(R.id.button1);
 		button2 = (Button) findViewById(R.id.button2);
@@ -59,12 +59,11 @@ public class MainActivity extends Activity {
 		button6 = (Button) findViewById(R.id.button6);
 		
 		button1.setOnClickListener(new View.OnClickListener() {
-			
+			ms.start();
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				button1.setText(R.string.Value1);
-				ms.start();
 				if(second){
 					if(prev==4){
 						text = "Match!";
@@ -89,7 +88,6 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				button2.setText(R.string.Value2);
-				ms.start();
 				if(second){
 					if(prev==3){
 						text = "Match!";
@@ -112,7 +110,6 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				ms.start();
 				button3.setText(R.string.Value3);
 				if(second){
 					if(prev==2){
@@ -136,7 +133,6 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				ms.start();
 				button4.setText(R.string.Value4);
 				if(second){
 					if(prev==1){
@@ -160,7 +156,6 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				ms.start();
 				button5.setText(R.string.Value5);
 				if(second){
 					if(prev==6){
@@ -184,7 +179,6 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				ms.start();
 				button6.setText(R.string.Value6);
 				if(second){
 					if(prev==5){
