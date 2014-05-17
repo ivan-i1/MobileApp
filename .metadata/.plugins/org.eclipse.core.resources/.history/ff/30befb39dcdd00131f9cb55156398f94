@@ -1,0 +1,44 @@
+package com.example.myapp;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class Menu extends Activity {
+	@Override
+	protected void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_menu);
+		
+		Button a = (Button) findViewById(R.id.numbers_menu);
+		Button b = (Button) findViewById(R.id.image_menu);
+		Button c =  (Button) findViewById(R.id.exit_menu);
+		
+		a.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				startActivity(new Intent("com.example.myapp.MainActivity"));
+			}
+		});
+		b.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				startActivity(new Intent("com.example.myapp.ImageMatch"));
+			}
+		});
+		c.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+	}
+}
