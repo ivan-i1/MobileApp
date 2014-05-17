@@ -66,23 +66,22 @@ public final class R {
         public static final int step=0x7f040002;
     }
     public static final class string {
-        public static final int Value1=0x7f06000b;
-        public static final int Value2=0x7f06000c;
-        public static final int Value3=0x7f06000d;
-        public static final int Value4=0x7f06000e;
-        public static final int Value5=0x7f06000f;
-        public static final int Value6=0x7f060010;
+        public static final int Value1=0x7f06000a;
+        public static final int Value2=0x7f06000b;
+        public static final int Value3=0x7f06000c;
+        public static final int Value4=0x7f06000d;
+        public static final int Value5=0x7f06000e;
+        public static final int Value6=0x7f06000f;
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
-        public static final int exit_button=0x7f060005;
-        public static final int hello_world=0x7f060002;
-        public static final int highscore=0x7f060006;
-        public static final int image_button=0x7f060009;
-        public static final int music=0x7f060003;
-        public static final int numbers_button=0x7f06000a;
-        public static final int score=0x7f060007;
-        public static final int secret=0x7f060008;
-        public static final int sound=0x7f060004;
+        public static final int exit_button=0x7f060004;
+        public static final int highscore=0x7f060005;
+        public static final int image_button=0x7f060008;
+        public static final int music=0x7f060002;
+        public static final int numbers_button=0x7f060009;
+        public static final int score=0x7f060006;
+        public static final int secret=0x7f060007;
+        public static final int sound=0x7f060003;
     }
     public static final class style {
         /** 
