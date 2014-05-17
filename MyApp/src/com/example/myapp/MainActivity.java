@@ -1,0 +1,31 @@
+package com.example.myapp;
+
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+public class MainActivity extends Activity {
+
+	MediaPlayer mp;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		mp = MediaPlayer.create(this, R.raw.sakura);
+		setContentView(R.layout.activity_main);
+		mp.start();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	
+	protected void onDestroy(Bundle savedInstance){
+		mp.stop();
+	}
+
+}

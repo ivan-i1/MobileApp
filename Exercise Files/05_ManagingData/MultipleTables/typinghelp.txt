@@ -1,0 +1,37 @@
+define 'mytours' table
+----------------------
+
+	public static final String TABLE_MYTOURS = "mytours";
+	private static final String TABLE_MYTOURS_CREATE = 
+			"CREATE TABLE " + TABLE_MYTOURS + " (" +
+			COLUMN_ID + " INTEGER PRIMARY KEY)";
+
+add to my tours
+---------------
+
+	public boolean addToMyTours(Tour tour) {
+		ContentValues values = new ContentValues();
+		values.put(ToursDBOpenHelper.COLUMN_ID, tour.getId());
+		long result = database.insert(ToursDBOpenHelper.TABLE_MYTOURS, null, values);
+		return (result != -1);
+	}
+
+	
+retrieve my tours
+-----------------
+	
+	public List<Tour> findMyTours() {
+
+		String query = "SELECT tours.* FROM " +
+				"tours JOIN mytours ON " +
+				"tours.tourId = mytours.tourId";
+		Cursor cursor = database.rawQuery(query, null);
+
+		Log.i(LOGTAG, "Returned " + cursor.getCount() + " rows");
+
+		List<Tour> tours = cursorToList(cursor);
+		return tours;
+	}
+	
+
+	
